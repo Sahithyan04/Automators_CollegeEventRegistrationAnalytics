@@ -1,0 +1,10 @@
+# requirements.txt
+
+pandas
+numpy
+streamlit
+sqlalchemy
+streamlit-option-menu
+plotly
+openpyxl
+python-dotenv
