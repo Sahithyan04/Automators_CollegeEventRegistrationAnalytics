@@ -53,7 +53,7 @@ def bar_registrations_vs_attendance(reg_df: pd.DataFrame, att_df: pd.DataFrame) 
         marker=dict(line=dict(width=0)),
     ))
     fig.update_layout(
-        title="📊 Registrations vs Attendance by Event",
+        title="Registrations vs Attendance by Event",
         xaxis_title="Event",
         yaxis_title="Count",
         barmode="group",
@@ -69,7 +69,7 @@ def pie_department_participation(dept_df: pd.DataFrame) -> go.Figure:
         color_discrete_sequence=COLORS, hole=0.45,
     )
     fig.update_traces(textposition="inside", textinfo="percent+label")
-    fig.update_layout(title="🏛️ Department Participation Share")
+    fig.update_layout(title="Department Participation Share")
     return _apply_theme(fig)
 
 
@@ -86,7 +86,7 @@ def bar_attendance_percentage(pct_df: pd.DataFrame) -> go.Figure:
         textposition="outside",
     ))
     fig.update_layout(
-        title="📈 Attendance Rate by Event",
+        title="Attendance Rate by Event",
         xaxis_title="Attendance %",
         yaxis_title="Event",
         xaxis=dict(range=[0, 110]),
@@ -107,7 +107,7 @@ def bar_year_wise(year_df: pd.DataFrame) -> go.Figure:
         textposition="outside",
     ))
     fig.update_layout(
-        title="🎓 Participation by Academic Year",
+        title="Participation by Academic Year",
         xaxis_title="Year",
         yaxis_title="Registrations",
     )
@@ -127,7 +127,7 @@ def bar_top_events(top_df: pd.DataFrame) -> go.Figure:
         textposition="outside",
     ))
     fig.update_layout(
-        title="🏆 Top Attended Events",
+        title="Top Attended Events",
         xaxis_title="Attendance Count",
         yaxis_title="Event",
     )
@@ -142,7 +142,7 @@ def pie_invalid_records(inv_df: pd.DataFrame) -> go.Figure:
         color_discrete_sequence=COLORS, hole=0.4,
     )
     fig.update_traces(textposition="inside", textinfo="percent+label")
-    fig.update_layout(title="⚠️ Invalid Records Breakdown")
+    fig.update_layout(title="Invalid Records Breakdown")
     return _apply_theme(fig)
 
 
@@ -159,7 +159,7 @@ def line_attendance_trends(trends_df: pd.DataFrame) -> go.Figure:
         fillcolor="rgba(108, 99, 255, 0.15)",
     ))
     fig.update_layout(
-        title="📅 Attendance Trends Over Time",
+        title="Attendance Trends Over Time",
         xaxis_title="Date",
         yaxis_title="Check-ins",
     )
@@ -179,7 +179,7 @@ def heatmap_event_department(heatmap_df: pd.DataFrame) -> go.Figure:
         textfont=dict(size=12),
     ))
     fig.update_layout(
-        title="🗺️ Event × Department Registration Heatmap",
+        title="Event × Department Registration Heatmap",
         xaxis_title="Department",
         yaxis_title="Event",
     )
@@ -199,7 +199,7 @@ def bar_department_leaderboard(lb_df: pd.DataFrame) -> go.Figure:
         textposition="outside",
     ))
     fig.update_layout(
-        title="🏅 Department Leaderboard (Attendance Rate)",
+        title="Department Leaderboard (Attendance Rate)",
         xaxis_title="Attendance Rate %",
         yaxis_title="Department",
         xaxis=dict(range=[0, 110]),
@@ -223,7 +223,7 @@ def bar_match_summary(match_df: pd.DataFrame) -> go.Figure:
         textposition="outside",
     ))
     fig.update_layout(
-        title="🔗 Registration vs Attendance Match",
+        title="Registration vs Attendance Match",
         xaxis_title="Category",
         yaxis_title="Count",
     )
